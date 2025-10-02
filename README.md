@@ -89,13 +89,13 @@ module.exports = mongoose;
 
 El API del backend sigue los principios de **RESTful** usando parámetros de URL para las operaciones de modificación.
 
-| Operación      | Método   | Ruta (API Endpoint)                        | Función Principal                                          |
-| :------------- | :------- | :----------------------------------------- | :--------------------------------------------------------- |
-| **Crear**      | `POST`   | `/api/usuario/agregarusuario`              | `nuevousuario.save()`                                      |
-| **Leer Todos** | `GET`    | `/api/usuario/obtenerusuarios`             | `ModeloUsuario.find({})`                                   |
-| **Leer Uno**   | `GET`    | `/api/usuario/obtenerdatausuario`          | `ModeloUsuario.find({request.body.idusuario})`             |
-| **Actualizar** | `PUT`    | `/api/usuario/actualizausuario/:idusuario` | `ModeloUsuario.findOneAndUpdate(request.body.idusuario)`   |
-| **Eliminar**   | `DELETE` | `/api/usuario/borrarusuario/:idusuario`    | `ModeloUsuario.findOneAndDelete(request.params.idusuario)` |
+| Operación      | Método   | Ruta (API Endpoint)                     | Función Principal                                          |
+| :------------- | :------- | :-------------------------------------- | :--------------------------------------------------------- |
+| **Crear**      | `POST`   | `/api/usuario/agregarusuario`           | `nuevousuario.save()`                                      |
+| **Leer Todos** | `GET`    | `/api/usuario/obtenerusuarios`          | `ModeloUsuario.find({})`                                   |
+| **Leer Uno**   | `GET`    | `/api/usuario/obtenerdatausuario`       | `ModeloUsuario.find({request.body.idusuario})`             |
+| **Actualizar** | `PUT`    | `/api/usuario/actualizausuario`         | `ModeloUsuario.findOneAndUpdate(request.body.idusuario)`   |
+| **Eliminar**   | `DELETE` | `/api/usuario/borrarusuario/:idusuario` | `ModeloUsuario.findOneAndDelete(request.params.idusuario)` |
 
 ### Ejemplo de Petición `DELETE`
 
